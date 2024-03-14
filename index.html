@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather application</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div id="main">
+      <div id="nav">
+        <div id="nleft">
+          <h3>weather</h3>
+          <a href="">home</a>
+          <a href="">about</a>
+
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="card">
+          
+          <form>
+            <input  id="city" type="search" placeholder="Search" aria-label="Search">
+            <button  id="submit" type="submit">Search</button>
+          </form>
+          <h1>weather for <span id="cityname"></span></h1>
+          <div id="line" style="width: 100%; height: 2px; background-color: white;"></div>
+          <ul>
+            <li>Temperature is : <span id="temp"></span> <small style="opacity: .5;">°C</small></li>
+            <li>Max Temperature is : <span id="temp_max"></span><small style="opacity: .5;">°C</small></li>
+            <li>Min Temperature is : <span id="temp_min"></span><small style="opacity: .5;">°C</small></li>
+            <li>Feels Liks is : <span id="feels_like"></span><small style="opacity: .5;">°C</small></li>
+            <li>Wind Speed is : <span id="wind_speed"></span></li>
+            <li>Humidity is : <span id="humidity"></span></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+<!-- 
+  <div id="heads">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="city" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" id="submit" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <div class="container mx-auto">
+            <main>
+            <div class="row row-cols-md-3 text-center">
+          
+                <div class="col mx-auto" >
+                  <div class="card">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-dark ">Weather for <span id="cityname"></span></h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">°C</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Temperature is <span id="temp"></span><small class="text-body-secondary fw-dark">°C</small></li>
+                        <li>Wind Speed is <span id="wind_speed"></span></li>
+                        <li>Humidity is <span id="humidity"></span></li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </main>
+        </div>
+    
+
+  </div>  
+         -->
+    <script src="script.js"></script>
+  </body>
+</html>
